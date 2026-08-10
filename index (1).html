@@ -15,8 +15,6 @@
     }
     html { scroll-behavior: smooth; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--cream); color: var(--text-dark); line-height: 1.6; }
-
-    /* NAV */
     nav { position: sticky; top: 0; z-index: 100; background: var(--cream); border-bottom: 1px solid var(--border); padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
     .logo { display: flex; align-items: baseline; gap: 1px; text-decoration: none; }
     .logo-invoice { font-size: 20px; font-weight: 800; color: var(--text-dark); }
@@ -25,8 +23,6 @@
     .nav-links a { text-decoration: none; font-size: 14px; color: var(--text-mid); font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--clay); }
     .nav-cta { background: var(--clay); color: var(--white); padding: 9px 22px; border-radius: 22px; text-decoration: none; font-size: 14px; font-weight: 700; }
-
-    /* HERO */
     .hero { background: var(--clay); padding: 88px 32px 96px; text-align: center; }
     .hero-tag { display: inline-block; background: rgba(255,255,255,0.15); color: var(--clay-pale); font-size: 12px; font-weight: 700; letter-spacing: 2px; padding: 6px 16px; border-radius: 20px; margin-bottom: 28px; }
     .hero h1 { font-size: clamp(38px, 6vw, 70px); font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 22px; }
@@ -35,42 +31,30 @@
     .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
     .btn-white { background: var(--white); color: var(--clay); padding: 14px 32px; border-radius: 28px; text-decoration: none; font-size: 15px; font-weight: 700; }
     .btn-ghost { border: 2px solid rgba(255,255,255,0.45); color: var(--white); padding: 14px 32px; border-radius: 28px; text-decoration: none; font-size: 15px; font-weight: 600; }
-
-    /* TRUST BAR */
     .trust { background: var(--card-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 20px 32px; text-align: center; }
     .trust p { font-size: 13px; color: var(--text-mute); font-weight: 500; letter-spacing: 0.5px; }
     .trust strong { color: var(--clay); }
-
-    /* SECTIONS */
     section { padding: 84px 32px; }
     .container { max-width: 1080px; margin: 0 auto; }
     .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: var(--clay); text-transform: uppercase; margin-bottom: 10px; }
     h2.section-title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--text-dark); line-height: 1.2; margin-bottom: 14px; }
     p.section-sub { font-size: 17px; color: var(--text-mute); max-width: 520px; margin-bottom: 52px; line-height: 1.65; }
-
-    /* HOW IT WORKS */
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; margin-bottom: 0; }
-    .step { background: var(--card); padding: 32px 28px; border: 1px solid var(--border); position: relative; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; }
+    .step { background: var(--card); padding: 32px 28px; border: 1px solid var(--border); }
     .step:first-child { border-radius: 16px 0 0 16px; }
     .step:last-child { border-radius: 0 16px 16px 0; }
     .step-num { font-size: 48px; font-weight: 800; color: var(--border); line-height: 1; margin-bottom: 16px; }
     .step h4 { font-size: 16px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
     .step p { font-size: 14px; color: var(--text-mute); line-height: 1.6; }
-
-    /* FEATURES */
     .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
     .feat { background: var(--card); border-radius: 16px; padding: 28px; border: 1px solid var(--border); }
     .feat-icon { font-size: 30px; margin-bottom: 14px; }
     .feat h4 { font-size: 15px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
     .feat p { font-size: 13px; color: var(--text-mute); line-height: 1.65; }
-
-    /* MISSION STRIP */
     .mission { background: var(--text-dark); padding: 72px 32px; text-align: center; }
     .mission blockquote { font-size: clamp(20px, 3vw, 34px); font-weight: 700; color: var(--white); max-width: 700px; margin: 0 auto 16px; line-height: 1.35; }
     .mission em { color: var(--clay-pale); font-style: normal; }
     .mission cite { font-size: 13px; color: var(--text-mute); }
-
-    /* PRICING */
     .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
     .plan { background: var(--white); border-radius: 18px; border: 1px solid var(--border); padding: 30px; }
     .plan.featured { border: 2px solid var(--clay); }
@@ -84,42 +68,22 @@
     .plan ul li::before { content: "✓"; color: var(--clay); font-weight: 700; flex-shrink: 0; }
     .plan-btn { display: block; text-align: center; padding: 11px; border-radius: 10px; text-decoration: none; font-size: 14px; font-weight: 700; background: var(--clay); color: var(--white); }
     .plan-btn.ghost { background: transparent; border: 2px solid var(--clay); color: var(--clay); }
-
-    /* OTHER PRODUCTS */
-    .other-products { background: var(--card-alt); }
-    .bizhq-card { background: var(--white); border-radius: 20px; border: 1px solid var(--border); overflow: hidden; max-width: 680px; display: flex; flex-direction: column; }
-    .bizhq-header { background: var(--clay); padding: 32px; }
-    .bizhq-header h3 { font-size: 28px; font-weight: 800; color: var(--white); margin-bottom: 6px; }
-    .bizhq-header p { font-size: 15px; color: var(--clay-pale); }
-    .bizhq-body { padding: 28px; }
-    .bizhq-feature { display: flex; gap: 10px; margin-bottom: 14px; }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--clay); flex-shrink: 0; margin-top: 6px; }
-    .bizhq-feature p { font-size: 14px; color: var(--text-mid); line-height: 1.55; }
-    .bizhq-footer { padding: 0 28px 28px; }
-    .coming-soon { display: inline-block; background: var(--card-alt); border: 1px solid var(--border); color: var(--text-mute); padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 600; }
-
-    /* CONTACT */
     .contact-wrap { text-align: center; }
     .contact-btn { display: inline-block; background: var(--clay); color: var(--white); padding: 14px 36px; border-radius: 28px; text-decoration: none; font-size: 16px; font-weight: 700; }
-
-    /* FOOTER */
     footer { background: var(--text-dark); padding: 52px 32px 32px; }
     .footer-inner { max-width: 1080px; margin: 0 auto; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-    .footer-logo .logo-invoice { color: var(--white); }
     .footer-tagline { font-size: 13px; color: var(--text-mute); margin-top: 10px; line-height: 1.65; max-width: 220px; }
     .footer-col h5 { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--clay-light); margin-bottom: 14px; }
     .footer-col a { display: block; font-size: 13px; color: var(--text-mute); text-decoration: none; margin-bottom: 8px; }
     .footer-col a:hover { color: var(--white); }
     .footer-bottom { border-top: 1px solid #3D2015; padding-top: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
     .footer-bottom p { font-size: 12px; color: var(--text-mute); }
-
     @media (max-width: 700px) {
       nav { padding: 12px 16px; }
       .nav-links { gap: 16px; }
       .nav-links a:not(.nav-cta) { display: none; }
       section { padding: 56px 16px; }
-      .step:first-child, .step:last-child { border-radius: 0; }
       .step:first-child { border-radius: 16px 16px 0 0; }
       .step:last-child { border-radius: 0 0 16px 16px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -129,22 +93,18 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="/" class="logo">
-    <span class="logo-invoice">Invoice</span><span class="logo-pro">Pro</span>
-  </a>
+  <a href="/" class="logo"><span class="logo-invoice">Invoice</span><span class="logo-pro">Pro</span></a>
   <div class="nav-links">
     <a href="#how-it-works">How It Works</a>
     <a href="#features">Features</a>
     <a href="#pricing">Pricing</a>
-    <a href="#other-products">Our Apps</a>
+    <a href="#other-products">BizHQ</a>
     <a href="#contact">Contact</a>
     <a href="#pricing" class="nav-cta">Start Free</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <p class="hero-tag">Mobile Invoicing for Independent Professionals</p>
   <h1>Send an invoice.<br><em>Get paid faster.</em></h1>
@@ -155,38 +115,23 @@
   </div>
 </div>
 
-<!-- TRUST BAR -->
 <div class="trust">
   <p>Powered by <strong>Stripe</strong> for payments &nbsp;·&nbsp; Built for <strong>coaches, consultants, photographers, and freelancers</strong> &nbsp;·&nbsp; Free to start</p>
 </div>
 
-<!-- HOW IT WORKS -->
 <section id="how-it-works">
   <div class="container">
     <p class="eyebrow">How It Works</p>
     <h2 class="section-title">Three steps to getting paid.</h2>
     <p class="section-sub">No training required. If you can send a text, you can send an invoice.</p>
     <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h4>Create the Invoice</h4>
-        <p>Add your client, line items, and amounts. Done in under a minute.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h4>Share the Payment Link</h4>
-        <p>Every invoice comes with a Stripe payment link. Text it, email it, share it anywhere.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h4>Get Paid</h4>
-        <p>Your client pays online. You get notified. A receipt goes out automatically.</p>
-      </div>
+      <div class="step"><div class="step-num">01</div><h4>Create the Invoice</h4><p>Add your client, line items, and amounts. Done in under a minute.</p></div>
+      <div class="step"><div class="step-num">02</div><h4>Share the Payment Link</h4><p>Every invoice comes with a Stripe payment link. Text it, email it, share it anywhere.</p></div>
+      <div class="step"><div class="step-num">03</div><h4>Get Paid</h4><p>Your client pays online. You get notified. A receipt goes out automatically.</p></div>
     </div>
   </div>
 </section>
 
-<!-- FEATURES -->
 <section id="features" style="background: var(--card);">
   <div class="container">
     <p class="eyebrow">Features</p>
@@ -203,13 +148,11 @@
   </div>
 </section>
 
-<!-- MISSION -->
 <div class="mission">
   <blockquote>"No jargon. No learning curve. Just <em>send the invoice and get paid.</em>"</blockquote>
   <cite>The InvoicePro Philosophy</cite>
 </div>
 
-<!-- PRICING -->
 <section id="pricing">
   <div class="container">
     <p class="eyebrow">Pricing</p>
@@ -220,53 +163,32 @@
         <p class="plan-tag">FREE</p>
         <p class="plan-price">$0</p>
         <p class="plan-desc">Get started with no commitment</p>
-        <ul>
-          <li>Up to 3 clients</li>
-          <li>5 invoices per month</li>
-          <li>Stripe payment links</li>
-          <li>Automatic receipts</li>
-          <li>Basic payment tracking</li>
-        </ul>
+        <ul><li>Up to 3 clients</li><li>5 invoices per month</li><li>Stripe payment links</li><li>Automatic receipts</li><li>Basic payment tracking</li></ul>
         <a href="#" class="plan-btn ghost">Download Free</a>
       </div>
       <div class="plan featured">
         <p class="plan-tag">STARTER PRO</p>
         <p class="plan-price"><sup>$</sup>12<span>.99/mo</span></p>
         <p class="plan-desc">For growing independent professionals</p>
-        <ul>
-          <li>Unlimited clients</li>
-          <li>Unlimited invoices</li>
-          <li>Automated reminders</li>
-          <li>Full payment history</li>
-          <li>Priority support</li>
-        </ul>
+        <ul><li>Unlimited clients</li><li>Unlimited invoices</li><li>Automated reminders</li><li>Full payment history</li><li>Priority support</li></ul>
         <a href="#" class="plan-btn">Get Started</a>
       </div>
       <div class="plan">
         <p class="plan-tag">PRO</p>
         <p class="plan-price"><sup>$</sup>19<span>.99/mo</span></p>
         <p class="plan-desc">Everything you need to scale</p>
-        <ul>
-          <li>Everything in Starter Pro</li>
-          <li>Custom branding on invoices</li>
-          <li>Advanced reporting</li>
-          <li>Multiple payment methods</li>
-          <li>Dedicated support</li>
-        </ul>
+        <ul><li>Everything in Starter Pro</li><li>Custom branding on invoices</li><li>Advanced reporting</li><li>Multiple payment methods</li><li>Dedicated support</li></ul>
         <a href="#" class="plan-btn">Get Pro</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BIZHQ -->
 <section id="other-products" style="background: var(--text-dark); padding: 84px 32px;">
   <div class="container">
     <p class="eyebrow" style="color: var(--clay-pale);">Also From InvoicesPro</p>
     <h2 class="section-title" style="color: var(--white);">Meet BizHQ.</h2>
     <p class="section-sub" style="color: var(--clay-pale);">If InvoicePro is your billing tool, BizHQ is your entire back office — clients, proposals, contracts, documents, and an AI assistant that speaks plain English.</p>
-
-    <!-- HERO CARD -->
     <div style="background: var(--clay); border-radius: 24px; padding: 48px; margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center;">
       <div style="flex: 1; min-width: 260px;">
         <div style="display: inline-flex; align-items: baseline; gap: 3px; margin-bottom: 16px;">
@@ -280,80 +202,36 @@
       <div style="flex: 1; min-width: 260px; background: rgba(0,0,0,0.15); border-radius: 16px; padding: 28px;">
         <p style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--clay-pale); margin-bottom: 16px;">WHAT BIZHQ DOES</p>
         <div style="display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 20px;">🤖</span>
-            <p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>AI Command Bar</strong> — "Who still owes me money?" Real answers, plain English.</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 20px;">👥</span>
-            <p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Client CRM</strong> — Full profiles with invoices, proposals, contracts, and documents.</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 20px;">✍️</span>
-            <p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>E-Signatures</strong> — Send contracts, get them signed from a phone in minutes.</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 20px;">📁</span>
-            <p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Document Library</strong> — Upload, tag, and access all your business files.</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 20px;">🔔</span>
-            <p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Smart Reminders</strong> — AI sends follow-up emails on your behalf.</p>
-          </div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">🤖</span><p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>AI Command Bar</strong> — "Who still owes me money?" Real answers, plain English.</p></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">👥</span><p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Client CRM</strong> — Full profiles with invoices, proposals, contracts, and documents.</p></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">✍️</span><p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>E-Signatures</strong> — Send contracts, get them signed from a phone in minutes.</p></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">📁</span><p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Document Library</strong> — Upload, tag, and access all your business files.</p></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">🔔</span><p style="font-size: 14px; color: var(--white); line-height: 1.5;"><strong>Smart Reminders</strong> — AI sends follow-up emails on your behalf.</p></div>
         </div>
       </div>
     </div>
-
-    <!-- AI FEATURE HIGHLIGHT -->
     <div style="background: #1A0F08; border-radius: 20px; padding: 40px; margin-bottom: 40px;">
       <p style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--clay-light); margin-bottom: 14px;">THE BIZHQ AI DIFFERENCE</p>
       <h3 style="font-size: clamp(22px, 3vw, 34px); font-weight: 800; color: var(--white); margin-bottom: 16px; line-height: 1.3;">Just tell it what you need.</h3>
       <p style="font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 32px; max-width: 520px; line-height: 1.7;">No dashboards to learn. No accounting terms. BizHQ AI understands plain English and responds the same way — like a trusted assistant sitting right next to you.</p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
-        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;">
-          <p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"What needs my attention today?"</p>
-        </div>
-        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;">
-          <p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"Send Sandra a reminder about her invoice"</p>
-        </div>
-        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;">
-          <p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"How's business this month?"</p>
-        </div>
-        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;">
-          <p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"Who hasn't paid yet?"</p>
-        </div>
+        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;"><p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"What needs my attention today?"</p></div>
+        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;"><p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"Send Sandra a reminder about her invoice"</p></div>
+        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;"><p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"How's business this month?"</p></div>
+        <div style="background: rgba(196,98,45,0.2); border: 1px solid rgba(196,98,45,0.3); border-radius: 12px; padding: 16px;"><p style="font-size: 13px; color: var(--clay-pale); font-style: italic;">"Who hasn't paid yet?"</p></div>
       </div>
     </div>
-
-    <!-- PRICING -->
     <div style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 36px; border: 1px solid rgba(255,255,255,0.1);">
       <p style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--clay-pale); margin-bottom: 20px;">BIZHQ PRICING</p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
-        <div style="background: rgba(255,255,255,0.05); border-radius: 14px; padding: 24px; border: 1px solid rgba(255,255,255,0.1);">
-          <p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">FREE</p>
-          <p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$0</p>
-          <p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Get started, no commitment</p>
-          <p style="font-size: 13px; color: rgba(255,255,255,0.7);">3 clients · 5 proposals · 5 invoices · Basic AI</p>
-        </div>
-        <div style="background: var(--clay); border-radius: 14px; padding: 24px;">
-          <p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">STARTER PRO</p>
-          <p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$12.99<span style="font-size: 14px; font-weight: 500;">/mo</span></p>
-          <p style="font-size: 13px; color: var(--clay-pale); margin-bottom: 16px;">For growing professionals</p>
-          <p style="font-size: 13px; color: var(--white);">Unlimited everything · Full AI · Reminders</p>
-        </div>
-        <div style="background: rgba(255,255,255,0.05); border-radius: 14px; padding: 24px; border: 1px solid rgba(255,255,255,0.1);">
-          <p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">PRO</p>
-          <p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$19.99<span style="font-size: 14px; font-weight: 500;">/mo</span></p>
-          <p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Everything to scale</p>
-          <p style="font-size: 13px; color: rgba(255,255,255,0.7);">Starter Pro + branding + daily AI summary</p>
-        </div>
+        <div style="background: rgba(255,255,255,0.05); border-radius: 14px; padding: 24px; border: 1px solid rgba(255,255,255,0.1);"><p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">FREE</p><p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$0</p><p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Get started, no commitment</p><p style="font-size: 13px; color: rgba(255,255,255,0.7);">3 clients · 5 proposals · 5 invoices · Basic AI</p></div>
+        <div style="background: var(--clay); border-radius: 14px; padding: 24px;"><p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">STARTER PRO</p><p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$12.99<span style="font-size: 14px; font-weight: 500;">/mo</span></p><p style="font-size: 13px; color: var(--clay-pale); margin-bottom: 16px;">For growing professionals</p><p style="font-size: 13px; color: var(--white);">Unlimited everything · Full AI · Reminders</p></div>
+        <div style="background: rgba(255,255,255,0.05); border-radius: 14px; padding: 24px; border: 1px solid rgba(255,255,255,0.1);"><p style="font-size: 11px; color: var(--clay-pale); font-weight: 700; margin-bottom: 8px;">PRO</p><p style="font-size: 32px; font-weight: 800; color: var(--white); margin-bottom: 4px;">$19.99<span style="font-size: 14px; font-weight: 500;">/mo</span></p><p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Everything to scale</p><p style="font-size: 13px; color: rgba(255,255,255,0.7);">Starter Pro + branding + daily AI summary</p></div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="container contact-wrap">
     <p class="eyebrow">Contact</p>
@@ -364,34 +242,16 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-logo">
-        <a href="/" class="logo">
-          <span class="logo-invoice" style="color: var(--white);">Invoice</span><span class="logo-pro">Pro</span>
-        </a>
+        <a href="/" class="logo"><span class="logo-invoice" style="color: var(--white);">Invoice</span><span class="logo-pro">Pro</span></a>
         <p class="footer-tagline">Fast, professional invoicing for independent professionals. Built with care.</p>
       </div>
-      <div class="footer-col">
-        <h5>Product</h5>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <a href="#contact">Contact</a>
-        <a href="#other-products">Our Other Apps</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </div>
-      <div class="footer-col">
-        <h5>Download</h5>
-        <a href="#">App Store — Coming Soon</a>
-        <a href="#">Google Play — Coming Soon</a>
-      </div>
+      <div class="footer-col"><h5>Product</h5><a href="#how-it-works">How It Works</a><a href="#features">Features</a><a href="#pricing">Pricing</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="#contact">Contact</a><a href="#other-products">BizHQ</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      <div class="footer-col"><h5>Download</h5><a href="#">App Store — Coming Soon</a><a href="#">Google Play — Coming Soon</a></div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 InvoicesPro. All rights reserved.</p>
