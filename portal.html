@@ -236,11 +236,9 @@
 
     // Load the owner's branding (business name + logo) for a professional, branded portal.
     try {
-      var ownerId = null;
-      if (access && access.length) {
-        var accessFull = await sb.from('bp_portal_access').select('owner_user_id').limit(1);
-        if (accessFull.data && accessFull.data.length) ownerId = accessFull.data[0].owner_user_id;
-      }
+      // Get owner id directly from the portal-access row (independent of the access var above).
+      var ownerRes = await sb.from('bp_portal_access').select('owner_user_id').limit(1);
+      var ownerId = (ownerRes.data && ownerRes.data.length) ? ownerRes.data[0].owner_user_id : null;
       if (ownerId) {
         var brandRes = await sb.from('owner_branding').select('business_name, logo_url').eq('user_id', ownerId).limit(1);
         if (brandRes.data && brandRes.data.length) {
